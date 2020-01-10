@@ -1,0 +1,19 @@
+Here is the first template to understand how to setup and test your Linduino one.
+Follow the steps:
+1. Download LTSketchbook.zip from www.linear.com/docs/43958 or LTSketchbook.zip from resources. This is the entire codebase for 
+   theLinduinoboard, including all demo code,libraries for individual devices, auxiliary functions, and HTML documentation.
+   Extract this file to a location for working files, such as your “My Documents” directory or “C:\Projects”.
+2. Note: If QuikEval is already installed, please update to the latest version by selecting Tools → Update Program, 
+   then proceed to step 3. If not, download and run QuikEval from www.linear.com/software (or download the ITCqev.exe from the resources). 
+   This installs the QuikEval program, as well as the FTDI USB drivers required for the Linduino One (and other Linear Technology interface
+   boards.) Drivers are also distributed with the Arduino IDE, but it is recommended to let QuikEval install the drivers to ensure 
+   compatibility with the Linduino One. You will be prompted to connect the board to the PC during installation. Once the installation
+   is complete, quit QuikEval.
+3. Download the Arduino Integrated Development Environment (IDE) from either http://arduino.cc/en/Main/Software or
+   http://www.linear.com/designtools/linduino.php. IF you have already Arduino installed than ignore step 3 and follow from step 4 
+   else install arduino completely and than proceed as step 4.
+4. Now open Arduino IDE and from File->Prefrences enter the location of Sketchbook of the extracted .zip file. Now close the arduino IDE 
+   as it needs a restart to update the Sketchbook. Now connect the Linduino One to the PC. Now open the Arduino IDE and from
+   Tools->Boards->Arduino UNO and select the corresponding port number. To see if all drivers are installed properly and the module runs
+   fine, open Serial Monitor, choose Newline, Baudrate as 115200, you will se hello directly on the serial monitor screen and if you 
+   press the reset button on Linduino One you should see hello again. This ensures that Linduino One is properly working.
